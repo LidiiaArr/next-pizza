@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+    /*плавная прокрутка страницы*/
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    /*проверяет настройки пользователя*/
+    html {
+        scroll-behavior: auto;
+        /*значение по умолчанию, мгновенная прокрутка*/
+    }
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;
@@ -61,6 +74,10 @@
         --chart-5: 340 75% 55%;
     }
 }
+
+/** {*/
+/*    font-family: var(--font-nunito), sans-serif;*/
+/*}*/
 
 @layer base {
     * {

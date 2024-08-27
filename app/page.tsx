@@ -1,5 +1,5 @@
 import {Container, Filters, Title, TopBar} from "@/components/shared";
-import {ProductCard} from "@/components/shared/product-card";
+import {ProductsGroupList} from "@/components/shared/products-group-list";
 
 export default function Home() {
     return (
@@ -18,9 +18,61 @@ export default function Home() {
                     {/*Список пиц - правая часть*/}
                     <div className='flex-1'>
                         <div className='flex flex-col gap-16'>
-                            <ProductCard id={0} name={'Пеперонька'} price={550}
-                                         imageUrl={'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg'}
-                                         ingredients={[]}/>
+                            <ProductsGroupList title={'Пиццы'} items={[
+                                {
+                                    id: 1,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                },
+                                {
+                                    id: 2,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                },
+                                {
+                                    id: 3,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                },
+                                {
+                                    id: 4,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                }
+
+                            ]}
+                                               categoryId={1}/>
+                            <ProductsGroupList title={'Комбо'} items={[
+                                {
+                                    id: 1,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                },
+                                {
+                                    id: 2,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                },
+                                {
+                                    id: 3,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                },
+                                {
+                                    id: 4,
+                                    name: 'Чизбургер пицца',
+                                    imageUrl: 'https://s1.eda.ru/StaticContent/Photos/120131085624/171213000301/p_O.jpg',
+                                    items: [{price: 550}]
+                                }
+
+                            ]} categoryId={2}/>
                         </div>
                     </div>
                 </div>
